@@ -1,0 +1,529 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff7f0;
+    color: #333;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+    background: white;
+    border-bottom: 1px solid #e5e5e5;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.nav-logo {
+    width: 40px;
+    height: 40px;
+}
+
+.brand-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #222;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 25px;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    color: #ff8c42;
+}
+
+.hero-header {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-image: url('images/lapangan.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.15);
+}
+
+.hero-text {
+    position: absolute;
+    bottom: 70px;
+    left: 70px;
+    max-width: 600px;
+    color: white;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.45);
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 400;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero-subtitle {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #f5f5f5;
+}
+
+.content {
+    flex: 1;
+}
+
+.hero-content {
+    background: #ffe0c2;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.07);
+    margin-bottom: 25px;
+}
+
+.hero-content h2 {
+    margin-bottom: 10px;
+    color: #ff7a1f;
+}
+
+.cta-btn {
+    margin-top: 12px;
+    padding: 10px 18px;
+    background: #ff8c42;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.cta-btn:hover {
+    background: #ff7a1f;
+}
+
+.features {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.07);
+    margin-bottom: 25px;
+}
+
+.features h3 {
+    color: #ff8c42;
+}
+
+.features ul li {
+    margin: 8px 0;
+}
+
+.art-preview {
+    margin-top: 40px;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.art-grid {
+    display: flex;
+    gap: 25px;
+}
+
+.art-card {
+    background: #fff;
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+    padding-bottom: 15px;
+}
+
+.art-image {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.art-title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 15px 20px 8px;
+}
+
+.art-desc {
+    margin: 0 20px 15px;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.discover-btn {
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: #000;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #000;
+}
+
+.discover-btn:hover {
+    color: #ff8c42;
+    border-color: #ff8c42;
+}
+
+.highlight {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.07);
+}
+
+.highlight h3 {
+    color: #ff8c42;
+    margin-bottom: 12px;
+}
+
+.highlight-box {
+    display: flex;
+    gap: 15px;
+}
+
+.highlight-box img {
+    width: 120px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.footer {
+    text-align: center;
+    background: #ff8c42;
+    color: white;
+    padding: 12px;
+    margin-top: 30px;
+}
+
+/* ===========================
+   ABOUT PAGE – SPLIT HEADER
+   =========================== */
+
+.about-split {
+    display: flex;
+    width: 100%;
+    min-height: 600px;
+    margin-top: 40px;
+}
+
+/* LEFT TEXT */
+.about-split-text {
+    flex: 1;
+    padding: 80px 70px;
+}
+
+.about-split-title {
+    font-size: 3.2rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.about-split-desc {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #555;
+    max-width: 550px;
+}
+
+/* RIGHT IMAGE */
+.about-split-image {
+    flex: 1;
+    height: 100%;
+}
+
+.about-split-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ===========================
+   FOUNDER PROFILE SECTION
+   =========================== */
+
+.founder-section {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 40px;
+}
+
+.founder-heading {
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.founder-subheading {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.founder-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+/* FOTO */
+.founder-photo-container {
+    flex: 1;
+}
+
+.founder-photo {
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+/* INISIAL BESAR */
+.founder-initial {
+    font-size: 8rem;
+    font-weight: 300;
+    letter-spacing: 10px;
+    color: #4a4a4a;
+    flex-shrink: 0;
+    padding-top: 20px;
+}
+
+/* BIOGRAFI */
+.founder-bio {
+    flex: 2;
+}
+
+.founder-name {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
+
+.founder-role {
+    margin-bottom: 20px;
+    color: #777;
+    font-size: 1rem;
+}
+
+.founder-text {
+    margin-bottom: 18px;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #444;
+    text-align: justify;
+}
+
+/* ===========================
+   GALLERY PAGE – PREMIUM STYLE
+   =========================== */
+
+.gallery-title {
+    text-align: left;
+    font-size: 3rem;
+    font-weight: 400;
+    margin: 50px 60px 30px;
+    letter-spacing: 1px;
+    color: #333;
+}
+
+/* GRID MIRIP CONTOH */
+.gallery-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+}
+
+/* FOTO BESAR */
+.gallery-photo {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* CAPTION */
+.gallery-caption {
+    margin-top: 18px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #333;
+}
+
+/* ===========================
+   REGISTRATION PAGE
+   =========================== */
+
+body {
+    background: #fff7f0;
+}
+
+/* Container */
+.reg-container {
+    max-width: 500px;
+    margin: 80px auto;
+    text-align: center;
+    position: relative;
+}
+
+/* Title */
+.reg-title {
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+    color: #333;
+}
+
+.reg-underline {
+    width: 80px;
+    height: 3px;
+    background: #ff8c42;
+    margin: 12px auto 30px;
+    border-radius: 5px;
+}
+
+/* Form */
+.reg-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    text-align: left;
+}
+
+.reg-form label {
+    font-weight: 600;
+}
+
+.reg-form label span {
+    color: red;
+    font-weight: bold;
+}
+
+.reg-form input {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    background: #fff;
+}
+
+.reg-form input:focus {
+    border-color: #ff8c42;
+    outline: none;
+}
+
+.reg-btn {
+    margin-top: 15px;
+    padding: 12px 0;
+    width: 100%;
+    background: #ff8c42;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.reg-btn:hover {
+    background: #ff7a1f;
+}
+
+/* ===========================
+   CONTACT PAGE
+   =========================== */
+
+body {
+    background: #fff7f0;
+}
+
+/* Title */
+.contact-title {
+    text-align: left;
+    font-size: 3rem;
+    font-weight: 400;
+    margin: 60px 60px 40px;
+    letter-spacing: 1px;
+    color: #333;
+}
+
+/* Container */
+.contact-container {
+    max-width: 900px;
+    margin: 0 auto 80px;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Blocks */
+.contact-block h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.contact-block p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+.highlight {
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-block a {
+    text-decoration: none;
+    color: #333;
+}
+
+.contact-block a:hover {
+    color: #ff8c42;
+}
